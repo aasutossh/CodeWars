@@ -14,8 +14,4 @@ def longest(s1, s2):
     a = "abcdefghijklmnopqrstuvwxyz" longest(a, a) -> "abcdefghijklmnopqrstuvwxyz" 
 
     """
-    temp = s1 + s2
-    temp_set = set(temp)
-    temp_list = list(temp_set)
-    temp_list.sort()
-    return "".join(temp_list)
+    return "".join(sorted(set(s1 + s2)))
