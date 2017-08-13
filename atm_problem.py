@@ -10,12 +10,13 @@ def validate_pin(pin):
         validate_pin("12345") == False
         validate_pin("a234") == False
     """ 
-    if len(pin) == 4 or len(pin) == 6:
-        try:
-            int(pin)
-            return True
-        except ValueError:
-            return False
+    # if len(pin) == 4 or len(pin) == 6:
+    #     try:
+    #         int(pin)
+    #         return True
+    #     except ValueError:
+    #         return False
         
-    else:
-        return False
+    # else:
+    #     return False
+    return len(pin) in (4, 6) and pin.isdigit()
