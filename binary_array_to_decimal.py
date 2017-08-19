@@ -16,14 +16,18 @@ def binary_array_to_number(arr):
     Testing: [1, 1, 1, 1] ==> 15
     Testing: [1, 0, 1, 1] ==> 11
     """
-    arr_len = len(arr)
-    decimal = 0
-    for bit in arr:
-        print("bit = ", bit)
-        arr_len -= 1
-        if arr_len is (-1):
-            break
 
-        decimal += bit * (2 ** arr_len)
+    ######## MY OWN DOING #########
+    # arr_len = len(arr)
+    # decimal = 0
+    # for bit in arr:
+    #     print("bit = ", bit)
+    #     arr_len -= 1
+    #     if arr_len is (-1):
+    #         break
 
-    return decimal
+    #     decimal += bit * (2 ** arr_len)
+
+    # return decimal
+    ###############################
+    return int("".join(map(str, arr)), 2)
