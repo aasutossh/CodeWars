@@ -12,6 +12,7 @@ def breakChocolate(n, m):
     if we do not have any chocolate to split). Input will always be a
     non-negative integer.
     """
-    if n is 0 and m is 0:
-        return 0
-    return (n * m - 1)
+    # if n is 0 and m is 0:
+    #     return 0
+    # return (n * m - 1)
+    return max(n * m - 1, 0)  # using max function to get max of num and 0.
