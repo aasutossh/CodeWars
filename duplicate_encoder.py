@@ -37,3 +37,4 @@ def duplicate_encode(word):
         else:
             result.append('(')
     return "".join(str(b) for b in result)
+    # return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
