@@ -27,6 +27,8 @@ def duplicate_encode(word):
     actually the expected result, not the input! (these languages are
     locked so that's not possible to correct it).
     """
+    # tried making result a string and joining, but it didn't work as
+    # expected so with list
     result = []
     lower_word = word.lower()
     for symbol in lower_word:
