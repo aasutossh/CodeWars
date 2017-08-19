@@ -30,4 +30,4 @@ def binary_array_to_number(arr):
 
     # return decimal
     ###############################
-    return int("".join(map(str, arr)), 2)
+    return int(''.join(str(a) for a in arr), 2)
