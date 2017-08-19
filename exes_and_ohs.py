@@ -12,15 +12,18 @@ def xo(s):
         should return true
         XO("zzoo") => false
     """
-    no_of_x = 0
-    no_of_o = 0
-    for symbol in s:
-        if symbol == 'x':  # don't use "is" pto compare two different objects
-            no_of_x += 1
-        elif symbol == 'o':
-            no_of_o += 1
+    # no_of_x = 0
+    # no_of_o = 0
+    # for symbol in s:
+    #     if symbol == 'x':  # don't use "is" pto compare two different objects
+    #         no_of_x += 1
+    #     elif symbol == 'o':
+    #         no_of_o += 1
 
-    if no_of_o == no_of_x:
-        return True
-    else:
-        return False
+    # if no_of_o == no_of_x:
+    #     return True
+    # else:
+    #     return False
+
+    s = s.lower()
+    return s.count('x') == s.count('o')  # there is count method for string and # lists
