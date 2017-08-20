@@ -44,3 +44,8 @@ def tower_builder(n_floors):
     return result
     # and guess what it works
     # outstanding
+"""other solution s
+    return [("*" * (i*2-1)).center(n*2-1) for i in range(1, n+1)]
+    # remember the center attribute
+    return [" " * (n - i - 1) + "*" * (2*i + 1) + " " * (n - i - 1) for i in range(n)]
+"""
