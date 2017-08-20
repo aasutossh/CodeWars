@@ -31,7 +31,7 @@ def bouncingBall(h, bounce, window):
 
     h = 3, bounce = 1, window = 1.5, result is -1
     """
-    if h < 0 or bounce < 0 or bounce > 1 or window > h:
+    if h <= 0 or bounce <= 0 or bounce >= 1 or window >= h:
         return -1
     count = 1
     while h * bounce > window:
