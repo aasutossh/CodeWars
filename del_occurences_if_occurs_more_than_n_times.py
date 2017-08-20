@@ -34,12 +34,6 @@ def delete_nth(order, max_e):
     """
     final_list = []
     for photo in order:
-        # if order.count(photo) <= max_e:
-        #     final_list.append(photo)
-        # else:
         if final_list.count(photo) < max_e:
             final_list.append(photo)
-            # else:
-            #     pass
-
     return(final_list)  # works
