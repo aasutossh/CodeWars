@@ -49,3 +49,14 @@ def tower_builder(n_floors):
     # remember the center attribute
     return [" " * (n - i - 1) + "*" * (2*i + 1) + " " * (n - i - 1) for i in range(n)]
 """
+    total = w
+    result = list()
+    for _ in range(n - 1):
+        total += 2 * w
+
+    for _ in range(n):
+        for _ in range(h):
+            result.append(("*" * w).center(total))
+        w = w + w * 2
+
+    return result
