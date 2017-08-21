@@ -55,3 +55,5 @@ def order_weight(strng):
                     sorted = False
                     check[i], check[i + 1] = check[i + 1], check[i]
     return ' '.join(str(e) for e in check)
+    # other solutions
+    # return ' '.join(sorted(sorted(_str.split(' ')), key=lambda x: sum(int(c) for c in x)))
