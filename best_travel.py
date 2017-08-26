@@ -51,6 +51,7 @@ def choose_best_sum(t, k, ls):
     if templist:
         return max(templist)
     # try: 
-    #     return max(sum(i) for i in itertools.combinations(ls,k) if sum(i)<=t)
+    #     return max(sum(i) for i in itertools.combinations(ls,k) if 
+    #     sum(i)<=t)
     # except:
     #     return None
