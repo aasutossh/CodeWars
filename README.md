@@ -1,4 +1,4 @@
-CodeWars
+# CodeWars
 ## These are my solutions for the CodeWars but for Python.
 ___
 These are my *Solutions* for **CodeWars Katas**.
