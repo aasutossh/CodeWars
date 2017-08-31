@@ -30,9 +30,11 @@ def zeros(n):
     # return no_of_zero
 
     # theory http://www.purplemath.com/modules/factzero.htm
-    if n < 5: return 0  # without this it shows UnboundLocalError for
+    if n < 5:
+        return 0  # without this it shows UnboundLocalError for
     #  \max_power. weird
-    if n == 5: return 1  #  line 13 fails for n == 5
+    if n == 5:
+        return 1  # line 13 fails for n == 5
     no_of_zero = 0
     for i in range(n):
         no = n - 5 ** (i + 1)
@@ -44,3 +46,7 @@ def zeros(n):
         no_of_zero += int(n // (5 ** power))
 
     return no_of_zero
+    # best solution
+    # def zeros(n):
+    # x = n/5
+    # return x+zeros(x) if x else 0
